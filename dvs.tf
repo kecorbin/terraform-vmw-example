@@ -6,7 +6,7 @@ resource "vsphere_distributed_virtual_switch" "dvs" {
   active_uplinks  = ["uplink1", "uplink2"]
   standby_uplinks = ["uplink3", "uplink4"]
   allow_promiscuous = true
-  
+  allow_mac_changes = true
 }
 
 resource "vsphere_distributed_port_group" "dev" {
