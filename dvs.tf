@@ -5,7 +5,8 @@ resource "vsphere_distributed_virtual_switch" "dvs" {
   uplinks         = ["uplink1", "uplink2", "uplink3", "uplink4"]
   active_uplinks  = ["uplink1", "uplink2"]
   standby_uplinks = ["uplink3", "uplink4"]
-
+  allow_promiscuous = true
+  
 }
 
 resource "vsphere_distributed_port_group" "dev" {

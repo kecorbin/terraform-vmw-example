@@ -1,0 +1,1405 @@
+import "strings"
+import "types"
+
+_modules = {
+	"root": {
+		"data": {},
+		"path": [],
+		"resources": {
+			"vsphere_distributed_port_group": {
+				"dev": {
+					0: {
+						"applied": {
+							"auto_expand":              true,
+							"block_override_allowed":   null,
+							"custom_attributes":        null,
+							"description":              null,
+							"live_port_moving_allowed": null,
+							"name": "dev",
+							"netflow_override_allowed":               null,
+							"network_resource_pool_key":              "-1",
+							"network_resource_pool_override_allowed": null,
+							"port_config_reset_at_disconnect":        null,
+							"port_name_format":                       null,
+							"security_policy_override_allowed":       null,
+							"shaping_override_allowed":               null,
+							"tags": null,
+							"traffic_filter_override_allowed": null,
+							"type": "earlyBinding",
+							"uplink_teaming_override_allowed": null,
+							"vlan_id":                         1001,
+							"vlan_override_allowed":           null,
+						},
+						"destroy": false,
+						"diff": {
+							"active_uplinks.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"allow_forged_transmits": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"allow_mac_changes": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"allow_promiscuous": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"auto_expand": {
+								"computed": false,
+								"new":      "true",
+								"old":      "",
+							},
+							"block_all_ports": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"block_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"check_beacon": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"config_version": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"custom_attributes": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"description": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"directpath_gen2_allowed": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"distributed_virtual_switch_uuid": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_average_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_burst_size": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_peak_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"failback": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_average_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_burst_size": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_peak_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"key": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"lacp_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"lacp_mode": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"live_port_moving_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"name": {
+								"computed": false,
+								"new":      "dev",
+								"old":      "",
+							},
+							"netflow_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"netflow_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"network_resource_pool_key": {
+								"computed": false,
+								"new":      "-1",
+								"old":      "",
+							},
+							"network_resource_pool_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"notify_switches": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"number_of_ports": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"port_config_reset_at_disconnect": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"port_name_format": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"port_private_secondary_vlan_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"security_policy_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"shaping_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"standby_uplinks.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"tags": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"teaming_policy": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"traffic_filter_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"tx_uplink": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"type": {
+								"computed": false,
+								"new":      "earlyBinding",
+								"old":      "",
+							},
+							"uplink_teaming_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"vlan_id": {
+								"computed": false,
+								"new":      "1001",
+								"old":      "",
+							},
+							"vlan_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"vlan_range.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+				"prod": {
+					0: {
+						"applied": {
+							"auto_expand":              true,
+							"block_override_allowed":   null,
+							"custom_attributes":        null,
+							"description":              null,
+							"live_port_moving_allowed": null,
+							"name": "prod",
+							"netflow_override_allowed":               null,
+							"network_resource_pool_key":              "-1",
+							"network_resource_pool_override_allowed": null,
+							"port_config_reset_at_disconnect":        null,
+							"port_name_format":                       null,
+							"security_policy_override_allowed":       null,
+							"shaping_override_allowed":               null,
+							"tags": null,
+							"traffic_filter_override_allowed": null,
+							"type": "earlyBinding",
+							"uplink_teaming_override_allowed": null,
+							"vlan_id":                         1003,
+							"vlan_override_allowed":           null,
+						},
+						"destroy": false,
+						"diff": {
+							"active_uplinks.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"allow_forged_transmits": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"allow_mac_changes": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"allow_promiscuous": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"auto_expand": {
+								"computed": false,
+								"new":      "true",
+								"old":      "",
+							},
+							"block_all_ports": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"block_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"check_beacon": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"config_version": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"custom_attributes": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"description": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"directpath_gen2_allowed": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"distributed_virtual_switch_uuid": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_average_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_burst_size": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_peak_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"failback": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_average_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_burst_size": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_peak_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"key": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"lacp_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"lacp_mode": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"live_port_moving_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"name": {
+								"computed": false,
+								"new":      "prod",
+								"old":      "",
+							},
+							"netflow_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"netflow_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"network_resource_pool_key": {
+								"computed": false,
+								"new":      "-1",
+								"old":      "",
+							},
+							"network_resource_pool_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"notify_switches": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"number_of_ports": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"port_config_reset_at_disconnect": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"port_name_format": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"port_private_secondary_vlan_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"security_policy_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"shaping_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"standby_uplinks.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"tags": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"teaming_policy": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"traffic_filter_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"tx_uplink": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"type": {
+								"computed": false,
+								"new":      "earlyBinding",
+								"old":      "",
+							},
+							"uplink_teaming_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"vlan_id": {
+								"computed": false,
+								"new":      "1003",
+								"old":      "",
+							},
+							"vlan_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"vlan_range.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+				"test": {
+					0: {
+						"applied": {
+							"auto_expand":              true,
+							"block_override_allowed":   null,
+							"custom_attributes":        null,
+							"description":              null,
+							"live_port_moving_allowed": null,
+							"name": "test",
+							"netflow_override_allowed":               null,
+							"network_resource_pool_key":              "-1",
+							"network_resource_pool_override_allowed": null,
+							"port_config_reset_at_disconnect":        null,
+							"port_name_format":                       null,
+							"security_policy_override_allowed":       null,
+							"shaping_override_allowed":               null,
+							"tags": null,
+							"traffic_filter_override_allowed": null,
+							"type": "earlyBinding",
+							"uplink_teaming_override_allowed": null,
+							"vlan_id":                         1002,
+							"vlan_override_allowed":           null,
+						},
+						"destroy": false,
+						"diff": {
+							"active_uplinks.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"allow_forged_transmits": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"allow_mac_changes": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"allow_promiscuous": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"auto_expand": {
+								"computed": false,
+								"new":      "true",
+								"old":      "",
+							},
+							"block_all_ports": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"block_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"check_beacon": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"config_version": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"custom_attributes": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"description": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"directpath_gen2_allowed": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"distributed_virtual_switch_uuid": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_average_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_burst_size": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_peak_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"failback": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_average_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_burst_size": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_peak_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"key": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"lacp_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"lacp_mode": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"live_port_moving_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"name": {
+								"computed": false,
+								"new":      "test",
+								"old":      "",
+							},
+							"netflow_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"netflow_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"network_resource_pool_key": {
+								"computed": false,
+								"new":      "-1",
+								"old":      "",
+							},
+							"network_resource_pool_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"notify_switches": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"number_of_ports": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"port_config_reset_at_disconnect": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"port_name_format": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"port_private_secondary_vlan_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"security_policy_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"shaping_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"standby_uplinks.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"tags": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"teaming_policy": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"traffic_filter_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"tx_uplink": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"type": {
+								"computed": false,
+								"new":      "earlyBinding",
+								"old":      "",
+							},
+							"uplink_teaming_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"vlan_id": {
+								"computed": false,
+								"new":      "1002",
+								"old":      "",
+							},
+							"vlan_override_allowed": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"vlan_range.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+			},
+			"vsphere_distributed_virtual_switch": {
+				"dvs": {
+					0: {
+						"applied": {
+							"active_uplinks": [
+								"uplink1",
+								"uplink2",
+							],
+							"contact_detail":           null,
+							"contact_name":             null,
+							"custom_attributes":        null,
+							"datacenter_id":            "datacenter-2",
+							"description":              null,
+							"folder":                   null,
+							"host":                     [],
+							"ipv4_address":             null,
+							"link_discovery_operation": "listen",
+							"link_discovery_protocol":  "cdp",
+							"name": "terraform-test-dvs",
+							"netflow_active_flow_timeout":      60,
+							"netflow_collector_ip_address":     null,
+							"netflow_collector_port":           null,
+							"netflow_idle_flow_timeout":        15,
+							"netflow_internal_flows_only":      null,
+							"netflow_observation_domain_id":    null,
+							"netflow_sampling_rate":            null,
+							"network_resource_control_enabled": null,
+							"standby_uplinks": [
+								"uplink3",
+								"uplink4",
+							],
+							"tags": null,
+							"uplinks": [
+								"uplink1",
+								"uplink2",
+								"uplink3",
+								"uplink4",
+							],
+						},
+						"destroy": false,
+						"diff": {
+							"active_uplinks.#": {
+								"computed": false,
+								"new":      "2",
+								"old":      "",
+							},
+							"active_uplinks.0": {
+								"computed": false,
+								"new":      "uplink1",
+								"old":      "",
+							},
+							"active_uplinks.1": {
+								"computed": false,
+								"new":      "uplink2",
+								"old":      "",
+							},
+							"allow_forged_transmits": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"allow_mac_changes": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"allow_promiscuous": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"block_all_ports": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"check_beacon": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"config_version": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"contact_detail": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"contact_name": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"custom_attributes": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"datacenter_id": {
+								"computed": false,
+								"new":      "datacenter-2",
+								"old":      "",
+							},
+							"description": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"directpath_gen2_allowed": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_average_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_burst_size": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"egress_shaping_peak_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"failback": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"faulttolerance_maximum_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"faulttolerance_reservation_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"faulttolerance_share_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"faulttolerance_share_level": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"folder": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"hbr_maximum_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"hbr_reservation_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"hbr_share_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"hbr_share_level": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"host.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_average_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_burst_size": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress_shaping_peak_bandwidth": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv4_address": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"iscsi_maximum_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"iscsi_reservation_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"iscsi_share_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"iscsi_share_level": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"lacp_api_version": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"lacp_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"lacp_mode": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"link_discovery_operation": {
+								"computed": false,
+								"new":      "listen",
+								"old":      "",
+							},
+							"link_discovery_protocol": {
+								"computed": false,
+								"new":      "cdp",
+								"old":      "",
+							},
+							"management_maximum_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"management_reservation_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"management_share_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"management_share_level": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"max_mtu": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"multicast_filtering_mode": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"name": {
+								"computed": false,
+								"new":      "terraform-test-dvs",
+								"old":      "",
+							},
+							"netflow_active_flow_timeout": {
+								"computed": false,
+								"new":      "60",
+								"old":      "",
+							},
+							"netflow_collector_ip_address": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"netflow_collector_port": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"netflow_enabled": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"netflow_idle_flow_timeout": {
+								"computed": false,
+								"new":      "15",
+								"old":      "",
+							},
+							"netflow_internal_flows_only": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"netflow_observation_domain_id": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"netflow_sampling_rate": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"network_resource_control_enabled": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"network_resource_control_version": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"nfs_maximum_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"nfs_reservation_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"nfs_share_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"nfs_share_level": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"notify_switches": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"port_private_secondary_vlan_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"standby_uplinks.#": {
+								"computed": false,
+								"new":      "2",
+								"old":      "",
+							},
+							"standby_uplinks.0": {
+								"computed": false,
+								"new":      "uplink3",
+								"old":      "",
+							},
+							"standby_uplinks.1": {
+								"computed": false,
+								"new":      "uplink4",
+								"old":      "",
+							},
+							"tags": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"teaming_policy": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"tx_uplink": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"uplinks.#": {
+								"computed": false,
+								"new":      "4",
+								"old":      "",
+							},
+							"uplinks.0": {
+								"computed": false,
+								"new":      "uplink1",
+								"old":      "",
+							},
+							"uplinks.1": {
+								"computed": false,
+								"new":      "uplink2",
+								"old":      "",
+							},
+							"uplinks.2": {
+								"computed": false,
+								"new":      "uplink3",
+								"old":      "",
+							},
+							"uplinks.3": {
+								"computed": false,
+								"new":      "uplink4",
+								"old":      "",
+							},
+							"vdp_maximum_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vdp_reservation_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vdp_share_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vdp_share_level": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"version": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"virtualmachine_maximum_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"virtualmachine_reservation_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"virtualmachine_share_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"virtualmachine_share_level": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vlan_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vlan_range.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vmotion_maximum_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vmotion_reservation_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vmotion_share_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vmotion_share_level": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vsan_maximum_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vsan_reservation_mbit": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vsan_share_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"vsan_share_level": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+			},
+		},
+	},
+}
+
+module_paths = [
+	[],
+]
+
+terraform_version = "0.12.13"
+
+variables = {
+	"vsphere_password": "whereisyourstate?",
+	"vsphere_server":   "notreal.vsphere",
+	"vsphere_user":     "administrator@vsphere.local",
+}
+
+module = func(path) {
+	if types.type_of(path) is not "list" {
+		error("expected list, got", types.type_of(path))
+	}
+
+	if length(path) < 1 {
+		return _modules.root
+	}
+
+	addr = []
+	for path as p {
+		append(addr, "module")
+		append(addr, p)
+	}
+
+	return _modules[strings.join(addr, ".")]
+}
+
+data = _modules.root.data
+path = _modules.root.path
+resources = _modules.root.resources

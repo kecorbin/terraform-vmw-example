@@ -1,0 +1,9 @@
+{
+  "mock": {
+    "tfplan": "mock-tfplan-network.sentinel"
+  },
+  "test": {
+    "main": true
+  }
+}
+
