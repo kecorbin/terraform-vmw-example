@@ -19,5 +19,5 @@ data "vsphere_datastore" "datastore" {
 
 data "vsphere_compute_cluster" "maincluster" {
   name          = "MainCluster"
-  datacenter_id = "${data.vsphere_datacenter.dc.id}"
+  datacenter_id = data.vsphere_datacenter.dc.id
 }
